@@ -1,0 +1,59 @@
+.container {
+    margin: 10rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.destination {
+    text-align: center;
+}
+
+.destination h5 {
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.destination h5 span {
+    color: grey;
+}
+
+.content {
+    max-width: 70rem;
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.content ul li {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin-right: 5rem;
+}
+
+.content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    width: 50rem;
+}
+
+.horizontal {
+    width: 40rem;
+    height: 1px;
+    margin: 3rem 0;
+    background-color: rgba(255,255,255, .2);
+}
+
+.info {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.traveldistance {
+    margin-right: 10rem;
+}

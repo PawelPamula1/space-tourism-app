@@ -1,15 +1,17 @@
-import { Fragment } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import { Switch, Route } from 'react-router';
+import { Switch, Route, useLocation } from 'react-router';
 import Home from './pages/Home/Home';
 import Destination from './pages/Destination/Destination';
 import Crew from './pages/Crew/Crew';
 import Technology from './pages/Technology/Technology';
 
 function App() {
+  const location = useLocation();
+  const classLocation = location.pathname.replace('/', '');
+  console.log(classLocation);
   return (
-    <Fragment>
+    <div className={`container ${classLocation}`}>
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -17,7 +19,7 @@ function App() {
         <Route path="/crew" exact component={Crew} />
         <Route path="/technology" exact component={Technology} />
       </Switch>
-    </Fragment>
+    </div>
   );
 }
 
