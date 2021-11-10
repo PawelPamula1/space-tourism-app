@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cormorant+Garamond:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url(../src/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-size: 15rem;
+    text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-size: 10rem;
+    text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+    font-size: 5.6rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 2.8rem;
+    letter-spacing: 4.75px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.sub-heading-1 {
+    font-size: 2.8rem;
+}
+
+.sub-heading-2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 2.35px;
+}
+
+p {
+    font-size: 2.3rem;
+}
+
+.navigation {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2.35px;
 }
