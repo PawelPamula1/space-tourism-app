@@ -11,6 +11,14 @@
     width: 50rem;
 }
 
+.content h5 {
+    font-weight: 400;
+}
+
+.content h5 span {
+    color: grey;
+}
+
 .dots span {
     height: 1rem;
     width: 1rem;
