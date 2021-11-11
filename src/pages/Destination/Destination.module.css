@@ -32,6 +32,12 @@
     font-size: 2.8rem;
     text-transform: uppercase;
     margin-right: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.content ul li.active {
+    border-bottom: 2px solid #fff;
 }
 
 .content h2 {
