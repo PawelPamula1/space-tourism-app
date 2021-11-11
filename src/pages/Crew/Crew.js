@@ -19,10 +19,10 @@ const Crew = () => {
           </p>
         </div>
         <div className={classes.dots}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <button className={classes.active}></button>
+          <button></button>
+          <button></button>
+          <button></button>
         </div>
       </div>
       <img src={douglas} alt="" />

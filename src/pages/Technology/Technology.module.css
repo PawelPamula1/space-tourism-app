@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+    margin: 10rem 15rem;
+}
+
+.technology {
+    margin-right: 20rem;
+}
+
+.technology h5 {
+    margin-bottom: 10rem;
+    font-weight: 400;
+}
+
+.technology h5 span {
+    color: grey;
+}
+
+.box {
+    display: flex;
+}
+
+.buttons {
+    margin-right: 5rem;
+}
+
+.buttons button {
+    margin-bottom: 3rem;
+    padding: 4rem 5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    background-color: transparent;
+    transition: border .2s ease-in;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.buttons button:hover {
+    border: 1px solid #fff;
+}
+
+.buttons button.active {
+    background-color: #fff;
+    color: #0b0d17;
+}
