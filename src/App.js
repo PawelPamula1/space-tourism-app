@@ -9,7 +9,6 @@ import Technology from './pages/Technology/Technology';
 function App() {
   const location = useLocation();
   const classLocation = location.pathname.replace('/', '');
-  console.log(classLocation);
   return (
     <div className={`container ${classLocation}`}>
       <Navbar />
