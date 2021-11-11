@@ -50,28 +50,28 @@ const Crew = () => {
   };
 
   useEffect(() => {
-    if (currPerson == crew[0]) {
+    if (currPerson === crew[0]) {
       const timer = setTimeout(() => {
         setCurrPerson(crew[1]);
       }, 5000);
       return () => clearTimeout(timer);
     }
 
-    if (currPerson == crew[1]) {
+    if (currPerson === crew[1]) {
       const timer = setTimeout(() => {
         setCurrPerson(crew[2]);
       }, 5000);
       return () => clearTimeout(timer);
     }
 
-    if (currPerson == crew[2]) {
+    if (currPerson === crew[2]) {
       const timer = setTimeout(() => {
         setCurrPerson(crew[3]);
       }, 5000);
       return () => clearTimeout(timer);
     }
 
-    if (currPerson == crew[3]) {
+    if (currPerson === crew[3]) {
       const timer = setTimeout(() => {
         setCurrPerson(crew[0]);
       }, 5000);
