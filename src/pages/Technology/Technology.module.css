@@ -52,6 +52,11 @@
 }
 
 
+.description p {
+    margin: 0 1rem;
+}
+
+
 @media (max-width: 1400px) {
     .container {
         margin: 10rem 3rem;
@@ -101,6 +106,11 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        margin: 1rem 0;
+
+    }
+
     .container img {
         width: 100%;
         height: auto;
