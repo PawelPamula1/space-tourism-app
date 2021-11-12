@@ -125,6 +125,11 @@
     .content p {
         width: 40rem;
     }
+
+    .destination img {
+        margin: 0;
+        height: 15rem;
+    }
 }
 
 @media (max-width: 640px) {
