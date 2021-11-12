@@ -78,8 +78,16 @@ const Technology = () => {
           </div>
         </div>
       </div>
-      <img src={currTech.imageUrl} alt="vehicle" className={classes.portrait} />
-      <img src={currTech.imageUrlLandscape} className={classes.landscape} />
+      <img
+        src={currTech.imageUrl}
+        alt={currTech.name}
+        className={classes.portrait}
+      />
+      <img
+        src={currTech.imageUrlLandscape}
+        alt={currTech.name}
+        className={classes.landscape}
+      />
     </div>
   );
 };
