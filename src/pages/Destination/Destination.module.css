@@ -26,6 +26,7 @@
     list-style: none;
     display: flex;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .content ul li {
@@ -63,4 +64,78 @@
 
 .traveldistance {
     margin-right: 10rem;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        justify-content: space-between;
+        margin: 10rem;
+    }
+
+    .destination img {
+        height: 35rem;
+    }
+
+    .content {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .destination img {
+        height: 20rem;
+        margin: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        margin: 0 2rem;
+    }
+
+    .content ul {
+        justify-content: space-between;
+    }
+
+    .content ul li {
+        margin-right: 0;
+    }
+
+    .info {
+        justify-content: space-between;
+    }
+
+    .horizontal {
+        width: 100%;
+    }
+
+    .traveldistance {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .content p {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .content p {
+    }
+
+    .content ul li {
+        font-size: 2rem;
+    }    
+}
+
+@media (min-width: 360px) {
+    
 }
