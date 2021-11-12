@@ -128,14 +128,7 @@
 }
 
 @media (max-width: 640px) {
-    .content p {
-    }
-
     .content ul li {
         font-size: 2rem;
     }    
-}
-
-@media (min-width: 360px) {
-    
 }
