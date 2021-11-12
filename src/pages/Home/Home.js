@@ -5,7 +5,6 @@ import classes from './Home.module.css';
 const Home = () => {
   return (
     <Fragment>
-      <div className={classes.background}></div>
       <div className={classes.container}>
         <div className={classes.content}>
           <h5>So, you want to travel to</h5>
