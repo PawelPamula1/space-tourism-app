@@ -1,22 +1,36 @@
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3rem 15rem 0rem 15rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10rem 3rem;
     width: 50rem;
+    margin-top: 10rem;
 }
 
 .content h5 {
     font-weight: 400;
+    margin-bottom: 5rem;
 }
 
 .content h5 span {
     color: grey;
+}
+
+.person h4 {
+}
+
+.person h3 {
+margin-bottom: 2rem;
+}
+
+.person p {
+    margin-bottom: 5rem;
 }
 
 .dots button {
