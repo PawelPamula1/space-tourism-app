@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Navbar = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const clickHandler = () => {
+    setIsClicked(!isClicked);
+  };
+
+  const turnOffHandler = () => {
+    setIsClicked(false);
+  };
+  console.log(isClicked);
+
   return (
     <header>
       <nav className="navigation nav">
@@ -18,29 +32,51 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="horizontal"></div>
-        <ul className="navlinks">
-          <NavLink className="link" to="/">
+        <ul className={isClicked ? `navlinks active` : `navlinks`}>
+          <NavLink onClick={turnOffHandler} className="link" to="/">
             <li>
               <span>00</span> Home
             </li>
           </NavLink>
-          <NavLink className="link" activeClassName="current" to="/destination">
+          <NavLink
+            onClick={turnOffHandler}
+            className="link"
+            activeClassName="current"
+            to="/destination"
+          >
             <li>
               <span>01</span> Destination
             </li>
           </NavLink>
-          <NavLink className="link" activeClassName="current" to="/crew">
+          <NavLink
+            onClick={turnOffHandler}
+            className="link"
+            activeClassName="current"
+            to="/crew"
+          >
             <li>
               <span>02</span> Crew
             </li>
           </NavLink>
-          <NavLink className="link" activeClassName="current" to="/technology">
+          <NavLink
+            onClick={turnOffHandler}
+            className="link"
+            activeClassName="current"
+            to="/technology"
+          >
             <li>
               <span>03</span> Technology
             </li>
           </NavLink>
         </ul>
       </nav>
+      <div className={isClicked ? 'icon black' : 'icon'}>
+        {isClicked ? (
+          <FontAwesomeIcon icon={faTimes} onClick={clickHandler} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} onClick={clickHandler} />
+        )}
+      </div>
     </header>
   );
 };
