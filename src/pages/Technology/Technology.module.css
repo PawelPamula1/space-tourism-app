@@ -1,11 +1,12 @@
 .container {
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
     margin: 10rem 15rem;
 }
 
 .technology {
-    margin-right: 20rem;
+    max-width: 70rem;
 }
 
 .technology h5 {
@@ -44,4 +45,74 @@
 .buttons button.active {
     background-color: #fff;
     color: #0b0d17;
+}
+
+.container img.landscape {
+    display: none;
+}
+
+
+@media (max-width: 1400px) {
+    .container {
+        margin: 10rem 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5rem 1.5rem;
+    }
+
+    .container img.landscape {
+        display: block;
+    }
+
+    .container img.portrait {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .buttons {
+        margin: 0;
+        width: 100%;
+    }
+
+    .buttons button {
+        margin: 1rem 2rem;
+    }
+
+
+    .technology h5 {
+        margin-bottom: 1rem;
+    }
+
+    .technology {
+        max-width: 100rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons button {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .buttons button {
+        font-size: 2rem;
+    }
 }
